@@ -25,7 +25,7 @@ const Results = () => {
       return (
         <div className='flex flex-wrap justify-between space-y-6 sm:px-56'>
         {results?.map(({link,title},index)=>(
-          <div key={index} className='md:w-2/5 w-full' >
+          <div key={link} className='md:w-2/5 w-full' >
              <a href={link} target="_blank" rel="noreferrer">
                <p className='text-sm'>
                   {link.length > 30 ? link.substring(0,30) : link}
